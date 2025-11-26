@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Tom Le{% endblock %}
+
+{% block content %}
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Simple Life, Koi Ponds &amp; IT</h2>
+      <p>
+        Hi, I’m Tom Le — a proud Vietnamese-American who is passionate about both technology and tranquility. I was born in Vietnam and came to the United States in search of freedom and opportunity. Today, I live a life of gratitude, doing my best every day to build a meaningful career and a peaceful home in the country I love — America.
+      </p>
+      <div class="hero-actions">
+        <a href="{{ url_for('contact') }}" class="btn-primary">Contact Me</a>
+        <a href="{{ url_for('about') }}" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="{{ url_for('static', filename='images/MeIT.png') }}"
+           alt="Me IT"
+           class="hero-img">
+    </div>
+  </section>
+
+  <!-- Feature cards section -->
+  <section class="features">
+    <h3>What I’m Into</h3>
+
+    <div class="card-grid">
+      <article class="card">
+        <h4>Japanese Gardens</h4>
+        <p>
+          Creating calm spaces with rocks, water, trees, and koi ponds
+          using simple, natural materials.
+        </p>
+      </article>
+
+      <article class="card">
+        <h4>IT &amp; Cloud Learning</h4>
+        <p>
+          Working in campus IT support and studying Azure, Python,
+          and Flask to grow my skills.
+        </p>
+      </article>
+
+      <article class="card">
+        <h4>Simple Life in the US</h4>
+        <p>
+          Focusing on a simple, mindful lifestyle:
+          gardening, cooking, and enjoying everyday life.
+        </p>
+      </article>
+    </div>
+  </section>
+
+{% endblock %}
